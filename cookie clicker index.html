@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker - Gen Z Edition 🍪</title>
+    <link rel="stylesheet" href="cookie clicker.css">
+</head>
+
+<body>
+    <audio id="bgMusic" autoplay loop muted style="display: none;">
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_0821a1d30d.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🍪 COOKIE CLICKER 🍪</h1>
+            <p class="subtitle">NO CAP, THIS GAME HITS DIFFERENT</p>
+        </div>
+
+        <!-- Main Game Area -->
+        <div class="game-area">
+            <!-- Left: Cookie & Stats -->
+            <div class="left-panel">
+                <div class="cookie-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">COOKIES 💰</span>
+                        <span class="stat-value" id="cookieCount">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">PER SECOND 📈</span>
+                        <span class="stat-value" id="perSecond">0</span>
+                    </div>
+                </div>
+
+                <!-- Big Cookie Button -->
+                <div class="cookie-clicker">
+                    <button id="cookieBtn" class="big-cookie">
+                        🍪
+                    </button>
+                    <p class="cookie-text" id="clickText"></p>
+                </div>
+
+                <!-- Gen Z Motivational Text -->
+                <div class="motivation">
+                    <p id="motivationalText">fr fr, keep grinding 💪</p>
+                </div>
+            </div>
+
+            <!-- Right: Upgrades & Achievements -->
+            <div class="right-panel">
+                <!-- Upgrades Tab -->
+                <div class="tab-container">
+                    <button class="tab-btn active" onclick="switchTab('upgrades')">⬆️ UPGRADES</button>
+                    <button class="tab-btn" onclick="switchTab('achievements')">🏆 ACHIEVEMENTS</button>
+                </div>
+
+                <!-- Upgrades List -->
+                <div id="upgrades" class="tab-content active">
+                    <h2>LEVEL UP KING 👑</h2>
+                    <div class="upgrades-grid" id="upgradesGrid"></div>
+                </div>
+
+                <!-- Achievements List -->
+                <div id="achievements" class="tab-content">
+                    <h2>W'S AND L'S 📊</h2>
+                    <div class="achievements-grid" id="achievementsGrid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cookie clicker.js"></script>
+</body>
+
+</html>
